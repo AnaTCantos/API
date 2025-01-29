@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="f.png">
+</head>
+<body>
+    <canvas id="canv" width="32" height="32"></canvas>
+    <div class="container">
+        <h1>Final Space</h1>
+        <div id="control-panel">
+            <button id="load-button">Cargar personajes</button>
+        </div>
+        <div id="filters" style="display: none;">
+            <input type="text" id="name-filter" placeholder="Filtrado por nombre" required>
+            <button id="search-button">Buscar</button>
+            <select id="status-filter">
+                <option value="">Filtrar por estado</option>
+                <option value="alive">Vivo</option>
+                <option value="deceased">Muerto</option>
+                <option value="operational">Operativo</option>
+                <option value="destroyed">Destruido</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+        </div>
+        <div id="character-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
